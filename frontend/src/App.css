@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+body {
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+.card {
+  background-color: #fff;
+}
+.main_banner {
+  background: url(./assets/main_banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.main_banner::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.menulist,
+.banner-head,
+.banner_button {
+  position: relative;
+  z-index: 9;
+}
+.res-heading {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  font-size: 2em;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  margin: 0 15px;
+}
+.menulist .menu a:hover {
+  color: #7fffd4 !important;
+}
+.menulist .menu a,
+.navbar-brand {
+  color: #fff;
+  font-family: "Noto Serif", serif;
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #fff !important;
+}
+.menulist .menu a {
+  font-size: 1em;
+}
+.menulist .navbar-brand {
+  font-size: 2em;
+}
+.banner-head {
+  color: #7fffd4;
+  font-family: "Playfair Display", serif;
+  font-size: 6em;
+}
+.banner-names {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 900;
+  margin: 40px 0;
+}
+.banner-sub {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4em;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 0;
+  z-index: 6;
+}
+.recipe_card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.recipe_desc {
+  margin-bottom: 50px;
+}
+.banner_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner_button {
+  border: 2px solid #fff;
+  padding: 20px 30px;
+  font-size: 1.3em;
+  background: #333;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  max-width: 250px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  transition: all ease-in 0.5s;
+  margin-top: 20px;
+  transform: scale(1);
+}
+.banner_button:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+/* Banner */
+.banner {
+  background: url(./assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.banner-cap {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  margin-top: 40px;
+}
+.c_desc_text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+.cf_title {
+  color: #21618c;
+  font-size: 18px;
+  /* text-align: justify; */
+  text-transform: capitalize;
+}
+.dropdown-menu.show {
+  background-color: #fff;
+}
+.cf_body {
+  color: #515a5a;
+  font-size: 16px !important;
+  text-align: justify;
+}
+/* .dropdown-item:focus,
+.dropdown-item:hover {
+  pointer-events: none !important;
+} */
+.dropdown-menu {
+  pointer-events: none !important;
+}
+.bg_ban {
+  background: url(./assets/bg_log.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
